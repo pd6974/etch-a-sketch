@@ -1,0 +1,29 @@
+.gridDiv {
+    background-color: forestgreen;
+    border-color: gray;
+    border-style:groove;
+    display: flex;
+    margin: 0px;
+    justify-self: stretch;
+}
+
+.newGrid {
+    background-color: forestgreen;
+    border-color: gray;
+    border-style:groove;
+    display: flex;
+    margin: 0px;
+    justify-self: stretch;   
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    column-gap: 0px;
+    row-gap: 0px;
+    justify-items: center;
+    justify-content: center;
+    width: 825px;
+    height: 825px;
+    background-color: black;
+}
