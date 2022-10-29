@@ -1,8 +1,7 @@
-//variables to help me make the grid
+//variables & functions to help me make the grid
 const container = document.querySelector('.container');
 makeGrid();
 
-//function to build grid
 function makeGrid() {
     for (let i = 0; i < 256; i++) {
             const gridDiv = document.createElement('div');
@@ -17,18 +16,23 @@ const squares = document.querySelectorAll("div.gridDiv");
 //add hover event listener to each div
 squares.forEach((div) => {
     div.addEventListener('mouseover', (e) => {
-        e.target.style.backgroundColor = 'blue';
+        e.target.style.backgroundColor = 'darkgreen';
     });
 
 });
 
+
+//button to let user set a grid dimension
 const gridButton = document.querySelector('.gridButton');
 
 let dim = 0;
 
 //event listener to build grid
-gridButton.addEventListener('click', getDimension);
+gridButton.addEventListener('click', () => {
+    getDimension();
+});
 
+//function gets dimension and builds the grid
 function getDimension() {
     dim = prompt("What dimension would you like to set to the grid? (Max of 100)");
     dim = Number(dim);
@@ -47,20 +51,14 @@ function getDimension() {
             const gridDiv = document.createElement('div');
             container.appendChild(gridDiv);
             gridDiv.classList.add('gridDiv');
+            gridDiv.addEventListener('mouseover', (e) => {
+                e.target.style.backgroundColor = 'darkgreen';
+            }); 
     }
 
-    const newSquares = document.querySelectorAll('gridDiv')
-
-    newSquares.forEach((div) => {
-        div.addEventListener('mouseover', (e) => {
-            e.target.style.backgroundColor = 'blue';
-        });
-    
-    });
-
     }
-
     
 }
+
 
 

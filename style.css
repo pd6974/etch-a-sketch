@@ -1,16 +1,13 @@
 .gridDiv {
-    background-color: forestgreen;
-    border-color: gray;
-    border-style:groove;
+    background-color: tan;
     display: flex;
     margin: 0px;
     justify-self: stretch;
 }
 
 .newGrid {
-    background-color: forestgreen;
-    border-color: gray;
-    border-style:groove;
+    background-color: tan;
+
     display: flex;
     margin: 0px;
     justify-self: stretch;   
