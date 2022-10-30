@@ -1,3 +1,14 @@
+.contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start {
+    display: flex;
+    margin: 24px;
+}
+
 .gridDiv {
     background-color: tan;
     display: flex;
@@ -20,7 +31,9 @@
     row-gap: 0px;
     justify-items: center;
     justify-content: center;
-    width: 825px;
-    height: 825px;
-    background-color: black;
+    width: 725px;
+    height: 725px;
+    margin: 24px;
+    padding: 12px;
 }
+
